@@ -121,8 +121,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
-
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -135,7 +137,7 @@ JAZZMIN_SETTINGS={
     "site_title":"Kilinochchi Oction",
     "site_header":"Kilinochchi Oction",
     "site_brand":"Kilinochchi Oction",
-    "site_logo":"/aps/logo.ico"
+    "site_logo":"/aps/loog.jpeg"
 }
 
 
