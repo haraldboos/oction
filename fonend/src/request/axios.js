@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const back = axios.create({
-    baseURL:'http://localhost:8000/',
+    baseURL:'http://192.168.8.162:8000/',
     timeout:1000,
     headers:{
         'Content-Type':'application/json'

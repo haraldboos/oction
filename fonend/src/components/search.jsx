@@ -29,7 +29,7 @@ const subb=async (event)=>{
         {/* </FormControl> */}
         </form>
         <div className='justify-center	 mx-auto flex flex-row '>
-        {play && <img src={`http://localhost:8000${play.picture}`} className='  w-lvh h-lvh  rounded-xl' data-aos="zoom-in-up" alt={`${play.num}`}/>}
+        {play &&<div><h1>{play.name}</h1> <img src={`http://192.168.8.162:8000${play.picture}`} className='  w-lvh h-lvh  rounded-xl' data-aos="zoom-in-up" alt={`${play.num}`}/></div>}
 
         </div>
       </div>

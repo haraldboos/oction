@@ -12,7 +12,7 @@ def picture(request,file):
 
 
 class Team(models.Model):
-    name= models.CharField(max_length=20,default=None,verbose_name='Enter the Teame  Name',null=False,unique=True,primary_key=True)
+    name= models.CharField(max_length=40,default=None,verbose_name='Enter the Teame  Name',null=False,unique=True,primary_key=True)
 
     logo=models.ImageField(upload_to=picture,blank=True,default=None,null=False)
     amount=models.IntegerField(null=False,default=None)

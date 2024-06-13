@@ -1,10 +1,19 @@
 import Logo from '../assets/loog.jpeg'
 // import Welcome from '../assets/welcome-to-the-oction-2024.png';
 import Octaion from '../assets/auction.gif'
-import logo from '../assets/loog.jpeg'
+// import logo from '../assets/loog.jpeg'
 import Imas from './image'
 import { useEffect} from 'react'
-const logs=[logo,logo,logo,logo,logo,logo,logo,logo];
+import kiliyoor from '../assets/kiliyoor.png';
+import ckings from '../assets/ckings.jpeg';
+import goldroy from '../assets/kiligold.jpg';
+import phonix from '../assets/phonix.jpeg';
+import kskings from '../assets/spkings.jpeg';
+import ktit from '../assets/kilititan.jpg';
+import tharma from '../assets/Ttigers.jpeg';
+import knr from '../assets/kiliknight.jpeg';
+
+const logs=[kiliyoor,ckings,goldroy,phonix,kskings,ktit,tharma,knr];
 const Desktop = () => {
   // const [lo,setlo] = useState(logs)
   // useEffect(()=>{
@@ -35,7 +44,7 @@ const Desktop = () => {
     <div className="  items-center grid grid-cols-8 gap-1 p-0">
         {logs.map((src, index) => (
           <div key={index}>
-          <Imas key={index} src={src}  delay={index * 100} clas='rounded-full h-44'/>
+          <Imas key={index} src={src}  delay={index * 100} clas='rounded h-44'/>
         </div>
         ))}
       </div>
